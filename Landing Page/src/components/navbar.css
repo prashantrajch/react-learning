@@ -1,0 +1,27 @@
+nav{
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn{
+    all: unset;
+    padding: 6px 16px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 500;
+    /* height: 32px; */
+}
