@@ -43,6 +43,10 @@ export default function SliderImage({ url, page, limit }) {
   function handleBtnClick(getIdx) {
     setCurrentSlide(getIdx);
   }
+  
+  if(loading){
+    return <div>Loading data ! Please wait....</div>
+  }
 
   return (
     <div className="container">
