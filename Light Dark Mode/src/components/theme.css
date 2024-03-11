@@ -1,0 +1,36 @@
+:root {
+  --background-color: #000;
+  --text-color: #fff;
+  --bg-btn: #fff;
+  --text-btn: #000;
+}
+
+[data-theme="Light"] {
+  --background-color: #fff;
+  --text-color: #000;
+  --bg-btn: #000;
+  --text-btn: #fff;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 20px;
+    gap: 20px;
+    transition: all 0.5s;
+}
+
+button{
+    padding: 12px 20px;
+    background-color: var(--bg-btn);
+    color: var(--text-btn);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
