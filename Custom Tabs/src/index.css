@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab-heading{
+  display: flex;
+  margin: 20px 0;
+}
+
+.item{
+  padding: 10px 20px;
+  background-color: rebeccapurple;
+  color: #fff;
+  cursor: pointer;
+}
+
+.item.active, .item:hover{
+  background-color: blue;
+}
