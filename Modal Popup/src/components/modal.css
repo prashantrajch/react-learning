@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: animateModal;
+    animation-duration: 0.5s;
+}
+
+.modal{
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid red;
+    text-align: center;
+}
+
+.header,.footer{
+    padding: 40px 20px;
+    text-align: center;
+    background-color: green;
+    color: #fff;
+    position: relative;
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.body{
+    height: 200px;
+    background-color: #fff;
+}
+
+
+@keyframes animateModal {
+    from{
+        top: -100%;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
+}
+
+
+
