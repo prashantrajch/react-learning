@@ -1,0 +1,39 @@
+
+.container{
+    position: relative;
+}
+
+input{
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.suggestion-container{
+    position: absolute;
+    top: 69%;
+    width: 100%;
+    max-height: 400px;
+    overflow: auto;
+    background-color: #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+p{
+    color: red;
+}
+
+.suggestion-container p{
+    border-bottom: 2px solid red;
+    padding: 8px;
+    cursor: pointer;
+    color: black;
+}
+
+.suggestion-container p:hover{
+    background-color: #ddd;
+}
