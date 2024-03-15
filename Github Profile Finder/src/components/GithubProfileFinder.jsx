@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Card from "./Card";
 import "./style.css";
 export default function GithubProfileFinder() {
-  const [userName, setUserName] = useState("");
+  const [userName, setUserName] = useState("prashantrajch");
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -29,6 +29,12 @@ export default function GithubProfileFinder() {
   function handleSubmit() {
     fetchGithubApi();
   }
+
+  useEffect(() => {
+    fetchGithubApi();
+  },[])
+
+
 
   if (loading) {
     return <p>Loading Data.....! Please Wait...</p>;
