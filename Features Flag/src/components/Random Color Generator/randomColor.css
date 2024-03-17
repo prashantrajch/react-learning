@@ -1,0 +1,51 @@
+:root{
+    --btn1: #ffb703;
+    --btn2: #fb8500;
+    --btn3: #023047;
+}
+
+.bg-container{
+    height: 100vh;
+    width: 100%;
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+.bg-btns{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.bg-btns button{
+    all: unset;
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+}
+.bg-btns button:first-child{
+    background-color: var(--btn1);
+}
+
+.bg-btns button:nth-child(2){
+    background-color: var(--btn2);
+}
+.bg-btns button:last-child{
+    background-color: var(--btn3);
+    color: #fff;
+}
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    gap: 80px;
+    font-size: 30px;
+}
+

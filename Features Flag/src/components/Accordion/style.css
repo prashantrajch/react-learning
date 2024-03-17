@@ -1,0 +1,52 @@
+.accord-btn{
+    all: unset;
+    margin: 20px 230px;
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #023047;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.accordion-container{
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.accordion{
+    padding: 10px;
+    background-color: #023047;
+    color: #fff;
+    margin:0 25px;
+}
+
+.accordion:first-child{
+    border-radius: 5px 5px 0 0;
+}
+
+.accordion:last-child{
+    border-radius: 0 0 5px 5px;
+}
+
+
+
+.accordion header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button{
+    all: unset;
+    font-size: 25px;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+}
+
+.content p{
+    padding: 15px 0;
+    border-bottom: 2px solid #ccc;
+
+}
