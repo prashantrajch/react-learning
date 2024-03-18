@@ -5,9 +5,7 @@ export default function UseOnClickOustideMain() {
   const [showContent, setShowContent] = useState(false);
   const divRef = useRef();
 
-  OutsideClick(divRef,() => setShowContent(false));
-
-  console.log(OutsideClick)
+  OutsideClick(divRef, () => setShowContent(false));
 
   return (
     <div>
