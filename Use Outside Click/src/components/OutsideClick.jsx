@@ -3,7 +3,7 @@ import { useEffect } from "react";
 export default function OutsideClick(ref, handler) {
   useEffect(() => {
     function listener(event) {
-      if (!ref.current) {
+      if (!ref.current || ref.current.contains(event.target)) {
         console.log("im run in if block");
         return;
       }

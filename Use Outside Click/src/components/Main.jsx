@@ -10,15 +10,15 @@ export default function UseOnClickOustideMain() {
   return (
     <div>
       {showContent ? (
-        <div ref={divRef}>
-          <h1>Thsi is a random content</h1>
+        <div ref={divRef} style={{padding: '10px',background: 'blue',color: "#fff"}}>
+          <h1>This is a random content</h1>
           <p>
             Please click outside of theis to close this. It won't close if you
             click inside of this content
           </p>
         </div>
       ) : (
-        <button onClick={() => setShowContent(true)}>Show Content</button>
+        <button style={{padding: '12px 20px',cursor:'pointer'}} onClick={() => setShowContent(true)}>Show Content</button>
       )}
     </div>
   );
