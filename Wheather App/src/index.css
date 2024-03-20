@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.search-container {
+  margin: 20px 0;
+}
+
+.search-container input,
+.search-container button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  font-size: 20px;
+}
+.search-container button {
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.wheather-content {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FFB703;
+}
+
+.wheather-info {
+  display: flex;
+  border-top: 2px solid #ccc;
+}
+
+.wheather-info .col-1 {
+  flex: 1;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
