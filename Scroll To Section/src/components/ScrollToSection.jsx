@@ -81,7 +81,7 @@ export default function ScrollToSection() {
           ref={showNav === index ? ref : null}
           style={section.style}
         >
-          {section.label}{" "}
+          {section.label}
         </div>
       ))}
     </div>

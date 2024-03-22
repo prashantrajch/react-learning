@@ -8,7 +8,7 @@ export default function Home() {
     return (
       <div className="container py-8 flex m-auto justify-center flex-wrap gap-10">
         {loading? <h2>Data is Loading.....Please Wait.!</h2> :
-          recipeList ? recipeList.map((recepieItem) => <RecipeList item={recepieItem} />) : <p className="lg:text-4xl font-extrabold text-xl text-center text-black">Nothing to show...! Please Search Something</p>
+          recipeList ? recipeList.map((recepieItem) => <RecipeList key={recepieItem.id} item={recepieItem} />) : <p className="lg:text-4xl font-extrabold text-xl text-center text-black">Nothing to show...! Please Search Something</p>
         }
       </div>
     );
