@@ -40,7 +40,7 @@ export default function GlobalState({ children }) {
     if (index === -1) {
       cpyFavouritesList.push(getCurrentItem);
     } else {
-      cpyFavouritesList.splice(index);
+      cpyFavouritesList.splice(index,1);
     }
 
     setFavouritesList(cpyFavouritesList);
